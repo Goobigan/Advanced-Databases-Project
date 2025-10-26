@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Netflix Titles</title>
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+
+    <h1>Offline Netflix Titles</h1>
+
+    <div id="form">
+        <input id="show_id" placeholder="Show ID" />
+        <input id="type" placeholder="Type (Movie/TV Show)" />
+        <input id="title" placeholder="Title" />
+        <input id="director" placeholder="Director" />
+        <input id="country" placeholder="Country" />
+        <input id="release_year" placeholder="Release Year" />
+        <input id="rating" placeholder="Rating" />
+        <input id="duration" placeholder="Duration" />
+        <textarea id="description" placeholder="Description" rows="3"></textarea>
+        <button onclick="addTitle()">Add Title</button>
+    </div>
+
+    <hr />
+
+    <div id="titles"></div>
+
+</body>
+</html>
